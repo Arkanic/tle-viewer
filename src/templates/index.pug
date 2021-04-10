@@ -1,6 +1,23 @@
 doctype html
 html
     head
-        title WEB_BOILERPLATE
+        title TLE Viewer
+
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="../assets/icons/site.webmanifest" crossorigin="use-credentials">
+        <link rel="mask-icon" href="../assets/icons/safari-pinned-tab.svg" color="#737373">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/icons/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
     body
-        p test
+        div#loading.prompt-background
+            div#loading-message.prompt
+                img(src="../assets/loading.gif" width="32" height="32")
+                h4 Loading...
+                p#loading-message-content
+
+        p hi

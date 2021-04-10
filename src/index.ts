@@ -1,9 +1,14 @@
 import "./scss/main.scss";
 
 import * as assets from "./ts/assets";
+import * as loader from "./ts/loader";
 
-Promise.all([
-    assets.downloadAssets()
+
+loader.doLoadTasks([
+    {
+        task: assets.downloadAssets,
+        message: "Downloading Assets..."
+    }
 ]).then(() => {
-    console.log("ye");
+    console.log("loaded");
 });
